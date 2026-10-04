@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spokesmith | Mobile bike repair that comes to you</title>
+  <meta name="description" content="Spokesmith is a sample mobile bike repair service. We fix your bike where you parked it. Book a tune-up, repair or overhaul online.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚲</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Spokesmith home">Spokesmith</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="nav-cta" href="#contact">Book a visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">We fix your bike where you parked it.</h1>
+          <p class="lead">Spokesmith sends a trained mechanic with a fully stocked van to your home, office or train station. Most repairs are done in under an hour.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Book a visit</a>
+            <a class="btn btn-ghost" href="#services">See prices</a>
+          </div>
+          <p class="hero-note">Serving the city centre and 12 surrounding neighbourhoods, 7 days a week.</p>
+        </div>
+        <div class="hero-wheel" aria-hidden="true">
+          <svg id="wheel" viewBox="0 0 400 400" focusable="false">
+            <circle class="tyre" cx="200" cy="200" r="188"/>
+            <circle class="rim" cx="200" cy="200" r="168"/>
+            <g id="spokes"></g>
+            <circle class="hub" cx="200" cy="200" r="22"/>
+            <circle class="hub-core" cx="200" cy="200" r="8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container split">
+        <div class="split-head">
+          <h2 id="services-title">Services and prices</h2>
+          <p>Fixed prices, parts extra. You approve every part before we fit it.</p>
+        </div>
+        <ul class="price-list">
+          <li>
+            <div>
+              <h3>Quick fix</h3>
+              <p>Flat tyres, slipping gears, squeaky or weak brakes, loose chains.</p>
+            </div>
+            <div class="price"><strong>$25</strong><span>about 30 min</span></div>
+          </li>
+          <li>
+            <div>
+              <h3>Full tune-up</h3>
+              <p>Brakes, gears, wheels, bearings and cables checked, cleaned and adjusted.</p>
+            </div>
+            <div class="price"><strong>$79</strong><span>about 90 min</span></div>
+          </li>
+          <li>
+            <div>
+              <h3>Complete overhaul</h3>
+              <p>Bike stripped, deep-cleaned, re-greased and rebuilt with a ride test.</p>
+            </div>
+            <div class="price"><strong>$149</strong><span>about 3 hours</span></div>
+          </li>
+          <li>
+            <div>
+              <h3>Commuter plan</h3>
+              <p>Two tune-ups a year plus unlimited quick fixes at half price.</p>
+            </div>
+            <div class="price"><strong>$19</strong><span>per month</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="split-head">
+          <h2 id="about-title">Two mechanics, one van, a lot of broken chains</h2>
+        </div>
+        <div class="about-body">
+          <p>Spokesmith started in 2019 when two workshop mechanics got tired of customers leaving bikes for a week over a ten-minute fix. We bought a second-hand van, bolted a workbench into it and started driving to people instead.</p>
+          <p>Today we are a team of six, all certified, all paid to take the time a repair needs. We repair commuter bikes, e-bikes, kids' bikes and the odd cargo bike.</p>
+          <div class="van-list">
+            <h3>What is in the van</h3>
+            <p>A portable stand, tyres and tubes in 20 common sizes, brake pads, chains, cables, and a card reader. If we need a part we do not carry, we order it and come back at no extra visit fee.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container split">
+        <div class="split-head">
+          <h2 id="faq-title">Questions we hear a lot</h2>
+        </div>
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">Do you charge to come out?</button>
+            </h3>
+            <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
+              <p>No. The visit is free inside our service area. Outside it, we add a flat $10 travel fee, which we tell you before you book.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">Can you fix e-bikes?</button>
+            </h3>
+            <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
+              <p>Yes, for everything mechanical: brakes, gears, tyres, wheels. For motor and battery faults we run diagnostics and tell you if the manufacturer needs to be involved.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">What if it rains?</button>
+            </h3>
+            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
+              <p>The van has a pop-up canopy, so we work in light rain. In heavy storms we will message you to move the visit to the next free slot.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3>
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">Is the work guaranteed?</button>
+            </h3>
+            <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden>
+              <p>Every repair has a 30-day guarantee on labour. If the same problem comes back, we fix it again for free.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container split">
+        <div class="split-head">
+          <h2 id="contact-title">Book a visit</h2>
+          <p>Tell us what is wrong. We reply within 2 hours between 8am and 8pm with a time slot.</p>
+          <address>
+            <p><strong>Phone</strong><br><a href="tel:+15550142020">+1 555 014 2020</a></p>
+            <p><strong>Email</strong><br><a href="mailto:hello@spokesmith.example">hello@spokesmith.example</a></p>
+            <p><strong>Hours</strong><br>Every day, 8am to 8pm</p>
+          </address>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required minlength="2" aria-describedby="name-error">
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="phone-error">
+            <p class="error" id="phone-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service" required aria-describedby="service-error">
+              <option value="">Choose a service</option>
+              <option>Quick fix</option>
+              <option>Full tune-up</option>
+              <option>Complete overhaul</option>
+              <option>Commuter plan</option>
+              <option>Not sure yet</option>
+            </select>
+            <p class="error" id="service-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">What is wrong with the bike?</label>
+            <textarea id="message" name="message" rows="5" required minlength="10" maxlength="500" aria-describedby="message-error message-count"></textarea>
+            <p class="char-count" id="message-count">0 / 500</p>
+            <p class="error" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send booking request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Spokesmith. A sample business created for a web development project.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Confirmation modal -->
+  <dialog class="modal" id="successModal" aria-labelledby="modal-title">
+    <h2 id="modal-title">Request sent</h2>
+    <p id="modal-text">Thanks. We will reply within 2 hours with a time slot.</p>
+    <button class="btn btn-primary" id="modalClose" type="button">Close</button>
+  </dialog>
+</body>
+</html>
